@@ -27,3 +27,14 @@ git clone https://github.com/balena-io/open-balena.git ~/open-balena
  
  nano ~/.resinrc.yml
  resinUrl: "mydomain.com"
+ 
+ export NODE_EXTRA_CA_CERTS=/root/open-balena/config/certs/root/ca.crt
+ 
+ ./scripts/compose up -d
+ 
+ docker-compose build` or `docker-compose up --build
+ 
+ 
+ 
+ ## To destroy 
+ ##./scripts/compose down -v
